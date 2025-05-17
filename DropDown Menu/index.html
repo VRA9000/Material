@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop down menu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(223, 223, 235);
+            font-family: sans-serif;
+
+        }
+         .menu-bar{
+            background-color: rgba(47, 95, 163, 0.913);
+            text-align: center;
+      }
+        .menu-bar ul {
+            display: inline-flex;
+            list-style: none;
+            color: #fff;
+        }
+        .menu-bar  ul li{
+            width: 120px;
+            margin: 15px;
+            padding: 15px;
+
+        }
+        .menu-bar  ul li a{
+            text-decoration: none;
+            color: black;
+            font-weight: 700;
+            
+        }
+         .menu-bar ul li:hover {
+            border-radius: 5px;
+            
+
+        }
+        .menu-bar ul li a:hover {
+            color: white;
+        }
+        .sub-menu{
+            display: none;
+        }
+        .menu-bar ul li:hover .sub-menu ul{
+            display: block;
+            margin: 10px;
+        }
+        .menu-bar ul li:hover .sub-menu ul li {
+            width: 150px;
+            padding: 13px;
+            background: transparent;
+            border-radius: 0;
+            text-align: left; 
+            border-bottom: 2px solid black;
+                  
+        }
+        .menu-bar ul li:hover .sub-menu ul li:last-child{
+            border-bottom: none;
+        }
+        .menu-bar ul li:hover .sub-menu ul li a:hover {
+            color: white;
+        }
+        .menu-bar ul li:hover .sub-menu{
+            display: block;
+            position: absolute;
+            background-color:rgba(47, 95, 163, 0.913);
+            margin-top: 30px;
+            margin-left: -6%;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-bar">
+       <ul>
+        <li class="active"><a href="#"><i class="fa fa-home"></i>Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a>
+            <div class="sub-menu">
+                <ul>
+                    <li><a href="#">Service 1</a></li>
+                    <li><a href="#">Service 2</a></li>
+                    <li><a href="#">Service 3</a></li>
+                    <li><a href="#">Service 4</a></li>
+                </ul>
+
+
+
+             </div>
+        </li>
+             
+
+
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Our story</a></li>
+        <li><a href="#">Products</a>
+            <div class="sub-menu">
+                <ul>
+                    <li><a href="#">Product 1</a></li>
+                    <li><a href="#">Product 2</a></li>
+                    <li><a href="#">Product 3</a></li>
+                    <li><a href="#">Product 4</a></li>
+                </ul>
+
+
+
+             </div>
+        </li>
+        <li><a href="#">Contact</a></li>
+       </ul>
+     </div>
+    
+</body>
+</html>

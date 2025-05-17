@@ -1,0 +1,77 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+html {
+  background-color: rgb(4, 4, 63);
+}
+.container{
+  margin: auto;
+  border: 1px solid white;
+  width: 400px;
+  height: 600px;
+  background-color: rgba(245, 245, 245, 0.267);
+  border-radius: 12px;
+  box-shadow: 2px 3px 30px 10px gray;
+  
+}
+.container form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items:center;
+  margin: auto;
+}
+.container form .input-field {
+  height: 4rem;
+  width: 17rem;
+  text-align: left;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  background-color:rgba(222, 184, 135, 0.591);
+  color: black;
+  font-size: 20px;
+ 
+}
+.container form .btns {
+  display: flex;
+  padding: 10px;
+  margin-right: 20px;
+  justify-content: space-evenly;
+}
+.container form .radio-btns label{
+  font-size: 13px;
+}
+.container form h4 {
+  color: white;
+  font-size: 20px;
+}
+.container form .radio-btns label{
+  margin-right: 10px;
+  justify-content: space-evenly;
+  color: white;
+  font-size: 19px;
+}
+.container form .btns {
+  margin: auto;
+}
+.container form .btns button {
+  margin-right: 20px;
+  font-size: 20px;
+  padding: 13px;
+  border-radius: 3px;
+  font-weight: bold;
+  background-color: salmon;
+  cursor: pointer;
+}
+.container form .btns button:hover {
+  background-color:blanchedalmond;
+}
+.container h2 {
+  color: white;
+  font-size: 30px;
+  margin-top: 10px;
+  margin-left: 20px;
+}

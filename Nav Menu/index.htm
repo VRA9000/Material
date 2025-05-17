@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavMenu</title>
+    <style>
+        header{
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            background-color: rgb(12, 41, 98);
+            border-radius: 4px;
+            input{
+                height: 35px;
+                width: 400px;
+                display: flex;
+                flex-direction: row;
+                text-align: center;
+                align-items: center;
+                margin-top: 1.4%;
+                border-radius: 10px;
+                border: none;
+                margin-left: 6%;
+            }
+           .logo {
+            margin-top: 3px;
+            margin-left: 4px;
+           }
+            nav {
+                display: flex;
+                
+               
+                ul {
+                    display: inline-flex;
+                   
+                }
+                li{
+                    margin-left: 20px;
+                    list-style: none;
+
+                }
+                a {
+                    text-decoration: none;
+                    font-size: 25px;
+                    font-weight: 700;
+                    color: beige;
+                    &:hover{
+                        color:black;
+                    }
+                    .icon {
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin-right: 5px;
+                        
+                    }
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img class="logo" src="/envato_3670206.png" width="50" height="50" alt="Logo image">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">FAQs</a></li>
+            </ul>
+            <input type="search" name="search" id="search">
+        </nav>
+        <div class="icon">
+            <img src="/icons8-person-64.png" width="35" alt="User image">
+            <img src="/icons8-cart-32.png" width="30" alt="Shopping Cart">
+        </div>
+    </header>
+    
+</body>
+</html>

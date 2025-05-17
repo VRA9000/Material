@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Sign in form</title>
+</head>
+<body>
+  <div class="container">
+  <form >
+    <h2>Sign In</h2> <br>
+    <label for="fname"></label>
+    <input class="input-field" type="text" placeholder="First Name" required spellcheck="true" min="4" max="15">
+    <label for="lname"></label>
+    <input class="input-field" type="text" placeholder="Last Name" required spellcheck="true" min="4" max="15">
+    <label for="email"></label>
+    <input class="input-field" type="email" placeholder="Email" required spellcheck="true" >
+    <label for="password"></label>
+    <input class="input-field" type="password" placeholder="*******" required spellcheck="true" min="4" max="15">
+
+      <h4>Choose</h4>
+    <div class="radio-btns">
+      <label for="man">Man</label>
+      <input  type="radio" id="man" name="gender" required>
+      <label for="woman">Woman</label>
+      <input  type="radio" id="woman" name="gender" required>
+      <label for="other">Other</label>
+      <input  type="radio" id="other" name="gender" required>
+    </div>
+    <div class="btns">
+      <button type="submit">Submit</button>
+      <button type="reset">Clear</button>
+
+    </div>
+    
+    
+
+  </form>
+</div>
+</body>
+</html>

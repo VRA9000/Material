@@ -1,0 +1,91 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --BG-Color: linear-gradient(180deg, rgb(16, 16, 37)4%,rgb(26, 30, 29), rgb(40, 55, 81));
+  --FC-Color: white;
+}
+html, body {
+  width: 100%;
+  font-size: 16px;
+  color: var(--FC-Color);
+  background: var(--BG-Color);
+}
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-size: 250%;
+}
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------- */
+/* .shape {
+  width: 200px;
+  height: 200px;
+  background-color:green;
+  transition: clip-path 0.2s;
+  clip-path:polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25%
+0%);
+}
+.shape:hover{
+ clip-path:polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0%
+0%);
+
+} */
+
+
+/* ------------------------------------------------------------------------------ */
+
+/* .cube{
+  width: 200px;
+  height: 200px;
+  background-color:green;
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+} */
+/* .cube {
+  width: 200px;
+  height: 200px;
+  background-color:green;
+  clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+} */
+  /* .cube {
+    width: 200px;
+    height: 200px;
+    border: 10px solid linear-gradient(35deg, rgb(23, 69, 197), rgb(24, 56, 201), rgb(124, 20, 108));;
+    border-radius: 50%;
+    animation: roll-cube 12s infinite ease;
+    background:linear-gradient(35deg, rgb(23, 197, 156), rgb(24, 174, 201), rgb(62, 189, 43));
+  }
+
+  @keyframes roll-cube {
+    0% {
+      transform: translateX(0);
+    }
+    
+   25% {
+    transform: translateX(500px);
+   }
+   50% {
+    transform: translateX(-500px);
+   }
+   75% {
+    transform: translateX(500px);
+    
+  }100%{
+    transform: translateX(-500px);
+  }
+  } */

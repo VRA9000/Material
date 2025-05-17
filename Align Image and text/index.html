@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text & Image</title>
+    <style>
+        html {
+            background-color: rgb(219, 219, 219);
+        }
+        h1 {
+            text-align: center;
+            font-family: sans-serif;
+        }
+        .content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-top: 10%;
+            margin-right: 10%;
+            margin-right: 10%;
+            p{
+                width: 500px;
+                height: 500px;
+                img{
+                    width: 100%;
+                    height: 500px;
+
+                }
+               
+            }
+        }
+        @media(max-width:900px){
+            .content{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            margin: auto;
+            p {
+                width :500px;
+                text-align: center;
+                 align-items: center;
+                 margin: auto;
+                 margin-top: 100px;
+                
+            }
+            img {
+    
+                width: 300px;
+                height: 300px;
+                text-align: center;
+            align-items: center;
+            margin: auto;
+            }
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>In this video we put a text next to an image </h1>
+    <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla molestie ligula nulla, ut hendrerit magna ornare id. Quisque varius orci ante, non varius urna vehicula ultricies. Etiam et elit et justo mollis gravida non non quam. Curabitur pharetra mauris quis facilisis gravida. Etiam turpis sapien, convallis sit amet molestie eget, blandit ut nibh. Nulla in ligula tincidunt, condimentum felis vitae, placerat lorem. Mauris id mauris orci. Praesent venenatis iaculis purus tristique tristique. Etiam nisl dolor, commodo at arcu et, sagittis aliquet dui. Sed egestas libero vel euismod feugiat. Maecenas ut mollis nibh. Proin pharetra volutpat ipsum posuere accumsan. Donec sit amet erat vitae enim sagittis volutpat. Ut quis metus id dui iaculis consectetur vel a tellus. Ut tristique ligula ac ex egestas, vitae aliquam justo pharetra.</p>
+        <img src="/david-dibert-POYDluw0tyw-unsplash.jpg" width="500px" alt="Image">
+    </div>
+    
+</body>
+</html>

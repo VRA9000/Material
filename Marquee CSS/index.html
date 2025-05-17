@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marquee Text</title>
+    <style>
+        h1 {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            background-color: orange;
+            font-weight: 700;
+            padding: 14px;
+            font-size: 24px;
+            justify-content: space-around;
+           
+            .item {
+                animation: marquee-text 6s linear infinite;
+                margin-left: 10px;
+                
+            }
+        }
+     @keyframes marquee-text{
+        0% {
+            transform: translateX(0%);
+            
+        }
+       
+        100% {
+            transform: translateX(-100%);
+        }
+     }
+    </style>
+</head>
+<body>
+    <h1>This is a text made with CSS and HTML</h1>
+    <div class="container">
+        <div class="item">HTML</div>
+        <div class="item">CSS</div>
+        <div class="item">YOUTUBE</div>
+        <div class="item">VSCODE</div>
+        <div class="item">JAVASCRIPT</div>
+        <div class="item">GITHUB</div>
+    </div>
+    
+</body>
+</html>
