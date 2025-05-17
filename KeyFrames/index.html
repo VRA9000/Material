@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@Keyframes</title>
+    <style>
+        h3 {
+            text-align: center;
+            margin: auto;
+
+        }
+        #about-me {
+          /*animation-name:  black-to-grey;
+            animation-duration: 7s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: infinite;
+            animation-direction: alternate; */
+           -webkit-animation: black-to-grey 6s linear 0s infinite alternate-reverse ;
+           -moz-animation: black-to-grey 6s linear 0s infinite alternate-reverse ;
+           -ms-animation: black-to-grey 6s linear 0s infinite alternate-reverse ;
+           -o-animation: black-to-grey 6s linear 0s infinite alternate-reverse ;
+      
+
+        }
+        @keyframes black-to-grey{
+            0%{
+                background: black;
+                transform: translate(0px, 0px);
+                width: 100%;
+                margin-bottom: 1%;
+                color: white;
+            }
+            50% {
+                background: lightgray;
+                transform: translate(10px, 10px);
+                width: 50%;
+                padding: 10px;
+                color: green;
+                margin-bottom: 1%;
+
+            }
+            100% {
+                background: rgb(103, 102, 102);
+                transform: translate(20px, 20px);
+                width: 40%;
+                padding:15 ;
+                padding-bottom: 10px;
+                color: darkgreen;
+                margin-bottom: 1%;
+            }
+        }
+        .images{
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: auto;
+            text-align: center;
+            justify-content: center;
+            img {
+                width: 800px;
+                height: 600px;
+            }
+            @media(max-width: 700px) {
+                img{
+                flex-direction: column;
+                gap: 30px;
+                width: 70%;
+                height: 70%;
+
+            }
+        }
+    }
+    
+    </style>
+</head>
+<body>
+    <h3 id="about-me">Hello, my name is Evangelos</h3>
+    <div class="images">
+    <img src="img/henrique-ferreira-6v-K4PpCHVw-unsplash.jpg" width="100%" alt="Switzerland">
+    <img src="img/john-disandolo-kU97RIGDPJQ-unsplash.jpg" width="100%" alt="Switzerland">
+</div>
+    
+</body>
+</html>
